@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -28,6 +28,11 @@ export const Details = ({
     { ingredient: strIngredient4, amount: strMeasure4 },
     { ingredient: strIngredient5, amount: strMeasure5 },
   ];
+
+  useEffect(() => {
+    document.title = strMeal;
+  }, [strMeal]);
+
   return (
     <section className="meal-details">
       <div className="img">
