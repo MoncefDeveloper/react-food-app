@@ -1,0 +1,87 @@
+.contact-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 7rem 0 0;
+}
+
+/* Heder Style Start */
+
+.contact-page .header {
+    width: 100%;
+    background: url(../assets/images/scb-banner.webp), #8080D2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem;
+    color: #fff;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-page .header .left-side .title {
+    font-size: 7vw;
+    letter-spacing: -.5vw;
+}
+
+/* Heder Style Finish */
+
+/* Form Style Start */
+
+.my-form {
+    width: 100%;
+    padding: 0 15vw;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #0f2e06;
+}
+
+.my-form .title {
+    font-size: 4vw;
+    font-weight: 500;
+    width: 100%;
+}
+
+.my-form .my-form-input {
+    width: 45%;
+    padding-bottom: .5rem;
+    border: none;
+    border-bottom: 1px solid #3333;
+    outline: none;
+    font-size: 1.5vw;
+    color: #0f2e06;
+}
+
+.my-form .my-form-input.my-form-text-area {
+    width: 100%;
+    resize: none;
+}
+
+.my-form .my-form-input.my-form-input::-webkit-input-placeholder {
+    color: #3336;
+}
+
+.my-form .my-form-input.my-form-input::-moz-placeholder {
+    color: #3336;
+}
+
+.my-form .my-form-input.my-form-input:-ms-input-placeholder {
+    color: #3336;
+}
+
+.my-form .my-form-input.my-form-input::-ms-input-placeholder {
+    color: #3336;
+}
+
+.my-form .my-form-input.my-form-input::placeholder {
+    color: #3336;
+}
+
+/* Form Style Finish */

@@ -1,0 +1,130 @@
+.my-footer {
+    width: 100%;
+    height: 80vh;
+    background-color: #fff;
+    color: #111;
+    padding: 5rem 3rem 1rem;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    background-color: #d9ecd1;
+    margin-top: 10rem;
+}
+
+.my-footer .top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 5rem;
+    flex: 1;
+}
+
+.my-footer .top .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.my-footer .top .left .logo {
+    width: 100px;
+    height: 100px;
+}
+
+.my-footer .top .left .logo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.my-footer .top .left .interested-btn {
+    padding: 1rem 4rem;
+    background-color: #111;
+    color: #fff;
+    border-radius: 300px;
+    font-size: 1.2vw;
+    font-weight: 700;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.my-footer .top .left .interested-btn .icon {
+    width: 3vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    border-radius: 100%;
+    background-color: #fff;
+    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease-in-out;
+}
+
+.my-footer .top .easy-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+.my-footer .top .left .interested-btn:hover .icon {
+    transform: translateX(50%);
+}
+
+.my-footer .top .easy-links .title,
+.my-footer .top .social-media-links .title {
+
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+.my-footer .top .easy-links .link {
+    font-size: 1vw;
+}
+
+.my-footer .top .easy-links .link:first-of-type,
+.my-footer .top .social-media-links .social-media-link-box:first-child {
+    margin-top: 1rem;
+}
+
+.my-footer .top .social-media-links {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+
+
+.my-footer .top .social-media-links .social-media-link-box {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.my-footer .top .social-media-links .social-media-link-box .title {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.my-footer .top .social-media-links .social-media-link-box .icon {
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-footer .rights-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    font-size: 1vw;
+    border-top: solid 1px #1113;
+}

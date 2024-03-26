@@ -1,0 +1,254 @@
+.my-Navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    top: 1rem;
+
+}
+
+.bar {
+    display: flex;
+    gap: 1rem;
+    background-color: #D8FF3C30;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 1rem;
+
+}
+
+.my-Navbar .logo {
+    width: 60px;
+    padding: .6rem .7rem;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    background-color: #D8FF3C80;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.my-Navbar .logo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.my-Navbar .links {
+    display: flex;
+    gap: 1rem;
+}
+
+.my-Navbar .logo,
+.my-Navbar .search-icon,
+.my-Navbar .links .link {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+}
+
+.my-Navbar .links .link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    background-color: #D8FF3C80;
+    border-radius: 20px;
+    color: #0f2e06;
+    display: flex;
+
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+}
+
+.my-Navbar .links .link.origin {
+    background-color: #0f2e06dd;
+    color: #D8FF3C;
+}
+
+.my-Navbar .search-icon {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    background-color: #D8FF3C80;
+    border-radius: 20px;
+    color: #0f2e06;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-Navbar .navbar-Search {
+    /* display: none; */
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #030e01f3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5vw;
+}
+
+.my-Navbar .navbar-Search .out-icon {
+    position: absolute;
+    top: 5vw;
+    right: 5vw;
+    font-size: 3vw;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.my-Navbar .navbar-Search .title {
+    font-size: 5vw;
+    font-weight: 500;
+    color: #fff;
+
+}
+
+.my-Navbar .navbar-Search .input-box {
+    display: flex;
+    gap: 1rem;
+    border: solid 2px #fff;
+    border-radius: 100px;
+    width: 50%;
+    position: relative;
+}
+
+.my-Navbar .navbar-Search .input-box input {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2rem;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5vw;
+    font-weight: 500;
+
+    outline: none;
+    transition: all .3s;
+    color: #fff;
+}
+
+.my-Navbar .navbar-Search .input-box input::-webkit-input-placeholder {
+    color: #eee9;
+}
+
+.my-Navbar .navbar-Search .input-box input::-moz-placeholder {
+    color: #eee9;
+}
+
+.my-Navbar .navbar-Search .input-box input:-ms-input-placeholder {
+    color: #eee9;
+}
+
+.my-Navbar .navbar-Search .input-box input::-ms-input-placeholder {
+    color: #eee9;
+}
+
+.my-Navbar .navbar-Search .input-box input::placeholder {
+    color: #eee9;
+}
+
+.my-Navbar .navbar-Search .input-box .search-btn {
+    background-color: #fff;
+    color: #0f2e06;
+    height: 100%;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.5vw;
+    padding: 0 2rem;
+    cursor: pointer;
+}
+
+.my-Navbar .navbar-Search .input-box .products {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 2rem;
+    max-height: 60vh;
+    overflow: auto;
+    transform: translateY(-5rem);
+    opacity: 0;
+    transition: .2s ease-in-out;
+    pointer-events: none;
+}
+
+.my-Navbar .navbar-Search .input-box .products-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+
+}
+
+.my-Navbar .navbar-Search .input-box .products .product {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    border-bottom: solid 1px #0f2e0620;
+    padding-bottom: 1rem;
+
+}
+
+.my-Navbar .navbar-Search .input-box .products .product:last-child {
+    padding: 0;
+    border: none;
+}
+
+.my-Navbar .navbar-Search .input-box .products .product .img {
+    width: 100px;
+    height: 80px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.my-Navbar .navbar-Search .input-box .products .product .img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.my-Navbar .navbar-Search .input-box .products .product .text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.my-Navbar .navbar-Search .input-box .products .product .text .title {
+    font-size: 1.5rem;
+    color: #0f2e06;
+    margin: 0;
+    font-weight: 500;
+}
+
+.my-Navbar .navbar-Search .input-box .products .product .text .description {
+    font-size: 1vw;
+    color: #0f2e0690;
+    font-weight: 500;
+
+}
