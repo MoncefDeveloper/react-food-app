@@ -2,6 +2,16 @@ import React from "react";
 import "../../styles/footer.css";
 import logo from "../../assets/images/logo.png";
 import { IoArrowForward, IoLogoGithub } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
+import {
+  FiFacebook,
+  FiGithub,
+  FiLinkedin,
+  FiTwitch,
+  FiTwitter,
+  FiYoutube,
+} from "react-icons/fi";
+import { ImFacebook } from "react-icons/im";
 
 export const Footer = () => {
   return (
@@ -20,47 +30,51 @@ export const Footer = () => {
         </div>
         <div className="easy-links">
           <div className="title">About Moncefdev</div>
-          <div className="link">Contact Us</div>
+          <NavLink to={"/contact"} className="link">
+            Contact Us
+          </NavLink>
           <div className="link">About Us</div>
-          <div className="link">Our Menu</div>
+          <NavLink to={"/"} className="link">
+            Our Menu
+          </NavLink>
         </div>
         <div className="social-media-links">
           <div className="title">Follow us</div>
           <div className="social-media-link-box">
             <div className="icon">
-              <IoLogoGithub />
+              <FiGithub />
             </div>
             <div className="title"> Github </div>
           </div>
           <div className="social-media-link-box">
             <div className="icon">
-              <IoLogoGithub />
+              <FiFacebook />
             </div>
-            <div className="title"> Github </div>
+            <div className="title"> Facebook </div>
           </div>
           <div className="social-media-link-box">
             <div className="icon">
-              <IoLogoGithub />
+              <FiLinkedin />
             </div>
-            <div className="title"> Github </div>
+            <div className="title"> Linkedin </div>
           </div>
           <div className="social-media-link-box">
             <div className="icon">
-              <IoLogoGithub />
+              <FiYoutube />
             </div>
-            <div className="title"> Github </div>
+            <div className="title"> Youtube </div>
           </div>
           <div className="social-media-link-box">
             <div className="icon">
-              <IoLogoGithub />
+              <FiTwitter />
             </div>
-            <div className="title"> Github </div>
+            <div className="title"> Twitter </div>
           </div>
           <div className="social-media-link-box">
             <div className="icon">
-              <IoLogoGithub />
+              <FiTwitch />
             </div>
-            <div className="title"> Github </div>
+            <div className="title"> Twitch </div>
           </div>
         </div>
       </div>

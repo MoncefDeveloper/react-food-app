@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { MdOutlineBreakfastDining } from "react-icons/md";
 import { LuDessert } from "react-icons/lu";
 import { LuBeef } from "react-icons/lu";
@@ -9,8 +9,15 @@ import { IoFishSharp } from "react-icons/io5";
 import { LuVegan } from "react-icons/lu";
 import { MdOutlineDinnerDining } from "react-icons/md";
 import { useHomeContext } from "../../../context/homeContext";
+import { categoriesAnimation } from "../../animations/home animations/categories";
 
 export const Categories = () => {
+  let myCategoriesSection = useRef(null);
+
+  useEffect(() => {
+    categoriesAnimation(myCategoriesSection);
+  }, []);
+
   const { category, setCategory, setIngredient, setArea, ingredient, area } =
     useHomeContext();
 
@@ -28,7 +35,7 @@ export const Categories = () => {
   ];
 
   return (
-    <section className="categories">
+    <section className="categories" ref={(e) => (myCategoriesSection = e)}>
       <div className="row">
         <div
           className={`category-box ${

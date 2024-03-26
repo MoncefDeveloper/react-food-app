@@ -67,7 +67,7 @@
     align-items: center;
 }
 
-.my-Navbar .links .link.origin {
+.my-Navbar .links .link.active {
     background-color: #0f2e06dd;
     color: #D8FF3C;
 }
@@ -103,7 +103,8 @@
     position: absolute;
     top: 5vw;
     right: 5vw;
-    font-size: 3vw;
+    font-size: 3rem;
+
     color: #fff;
     cursor: pointer;
 
@@ -252,3 +253,111 @@
     font-weight: 500;
 
 }
+
+
+/*  Tbalet style start */
+
+@media only screen and (max-width: 768px) {
+    .my-Navbar .logo {
+        width: 50px;
+        padding: .5rem .6rem;
+    }
+
+    .my-Navbar .links .link {
+        font-size: 1rem;
+        padding: .3rem .6rem;
+    }
+
+    .my-Navbar .search-icon {
+        font-size: 1rem;
+        padding: .3rem .6rem;
+    }
+
+    .my-Navbar .navbar-Search .title {
+        font-size: 6vw;
+    }
+
+    .my-Navbar .navbar-Search .input-box {
+        width: 80%;
+    }
+
+    .my-Navbar .navbar-Search .input-box input {
+        font-size: 2vw;
+    }
+
+    .my-Navbar .navbar-Search .input-box .search-btn {
+        font-size: 2vw;
+        padding: 0 2rem;
+    }
+
+    .my-Navbar .navbar-Search .input-box .products .product .img {
+        width: 80px;
+        height: 60px;
+    }
+
+    .my-Navbar .navbar-Search .input-box .products .product .text .title {
+        font-size: 1rem;
+    }
+
+    .my-Navbar .navbar-Search .input-box .products .product .text .description {
+        font-size: .8vw;
+    }
+
+    .my-Navbar .navbar-Search .out-icon {
+
+        top: 2rem;
+        right: 4rem;
+    }
+
+}
+
+/*  Tbalet Style Finish */
+
+/*  big phone style start */
+
+@media only screen and (max-width: 500px) {
+    .my-Navbar .navbar-Search .title {
+        font-size: 10vw;
+        width: 100%;
+        text-align: left;
+    }
+
+    .my-Navbar .navbar-Search .input-box {
+        width: 100%;
+    }
+
+    .my-Navbar .navbar-Search .input-box .search-btn {
+        font-size: 4vw;
+        padding: 0 1rem;
+    }
+
+    .my-Navbar .navbar-Search .input-box input {
+        font-size: 3.5vw;
+    }
+
+    .my-Navbar .navbar-Search .out-icon {
+        top: 5vw;
+        right: 2rem;
+    }
+
+    .my-Navbar .navbar-Search .input-box .products .product .text .title {
+        font-size: 7vw;
+    }
+
+    .my-Navbar .navbar-Search .input-box .products .product .text .description {
+        font-size: 4vw;
+    }
+
+    .my-Navbar .navbar-Search .input-box .products .product .img {
+        width: 150px;
+        height: 80px;
+    }
+}
+
+/*  big phone Style Finish */
+
+/*  phone style start */
+
+@media only screen and (max-width: 400px) {}
+
+/*  phone Style Finish */

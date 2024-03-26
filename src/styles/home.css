@@ -16,7 +16,7 @@
 
 .container .header {
     width: 100%;
-    gap: 10rem;
+    gap: 10vw;
     display: flex;
     flex-direction: column;
 }
@@ -333,7 +333,7 @@
 
 
 .Products .filter-and-sort .More-filters {
-    padding: 3vw;
+    padding: 3rem;
     position: absolute;
     z-index: 5;
     display: flex;
@@ -468,7 +468,6 @@
     cursor: pointer;
 }
 
-.Products .filter-and-sort .sort-list .sort-box input {}
 
 .Products .filter-and-sort .sort-list .sort-box .title {
     font-size: 1.2vw;
@@ -638,3 +637,370 @@
 }
 
 /* Categories Style Finish */
+
+
+
+/* Small PC style start */
+
+@media only screen and (max-width: 1024px) {
+
+
+    .container .header .left-side .title {
+        font-size: 5vw;
+    }
+
+    .products {
+        gap: 1rem;
+    }
+}
+
+/* Small PC Style Finish */
+
+/*  Tbalet style start */
+
+@media only screen and (max-width: 768px) {
+    .container .header .bottom {
+        flex-direction: column;
+    }
+
+
+    .container .header .left-side .title {
+        font-size: 10vw;
+    }
+
+    .container .header .left-side .img {
+        width: 30vw;
+    }
+
+    .container .header .right-side .title {
+        font-size: 5vw;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container .header .right-side .text {
+        font-size: 2.5vw;
+        text-align: center;
+
+    }
+
+    .categories {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .categories .row {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .categories .row .category-box {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .categories .row .category-box .icon {
+        font-size: 5vw;
+    }
+
+    .categories .row .category-box .title {
+        font-size: 1.5vw;
+
+    }
+
+    .Products .filter-and-sort .filter-btn {
+        padding: 2vw 5vw;
+        width: 100%;
+        flex: 1;
+        gap: 1rem;
+    }
+
+    .Products .filter-and-sort .filter-btn .title {
+        font-size: 3vw;
+    }
+
+    .Products .filter-and-sort .filter-btn .icon {
+        font-size: 4vw;
+    }
+
+    .Products .filter-and-sort .sort-btn {
+        display: none;
+    }
+
+    .Products .filter-and-sort .More-filters {
+        inset: 0;
+        top: 90%;
+        width: 100%;
+    }
+
+    .Products .filter-and-sort .More-filters .title {
+        font-size: 4vw;
+    }
+
+    .Products .filter-and-sort .More-filters .categories {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .Products .filter-and-sort .More-filters .categories .category-box {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .Products .filter-and-sort .More-filters .categories .category-box .icon {
+        font-size: 5vw;
+    }
+
+    .Products .filter-and-sort .More-filters .categories .category-box .title {
+        font-size: 1.5vw;
+
+    }
+
+    .Products .filter-and-sort .More-filters .notice {
+        padding: 1.5rem;
+        font-size: 3vw;
+    }
+
+    .Products .filter-and-sort .More-filters .cancel-icon {
+        font-size: 5vw;
+    }
+
+    .product-box {
+        width: 45%;
+    }
+
+    .product-box .details .detail {
+        font-size: 2.5vw;
+    }
+
+    .product-box .img {
+        height: 40vw;
+    }
+
+    .product-box .title {
+        font-size: 3vw;
+    }
+
+    .product-box .categories {
+        flex-direction: row;
+    }
+
+    .product-box .ingredients .ingredient {
+        font-size: 1.2vw;
+        font-weight: 500;
+    }
+
+    .product-box .categories .category-box {
+        width: auto;
+        height: auto;
+    }
+
+    .product-box .categories .category-box .icon {
+        font-size: 5vw;
+    }
+
+    .product-box .categories .category-box .title {
+        font-size: 1.5vw;
+
+    }
+
+
+
+    .product-box .add-to-cart-btn-and-price .price,
+    .product-box .add-to-cart-btn-and-price .title {
+        font-size: 2vw;
+    }
+}
+
+/*  Tbalet Style Finish */
+
+/*  big phone style start */
+
+@media only screen and (max-width: 500px) {
+    .container .header .image-with-text {
+        flex-direction: column;
+        height: auto;
+        padding-top: 10rem;
+    }
+
+    .container .header .image-with-text .text,
+    .container .header .image-with-text .image {
+        width: 100%;
+    }
+
+    .container .header .image-with-text .image {
+        order: -1;
+    }
+
+    .container .header .image-with-text .text .title {
+        font-size: 14vw;
+        line-height: 14vw;
+    }
+
+    .container .header .image-with-text .text .btn,
+    .container .header .image-with-text .text .descrption,
+    .container .header .image-with-text .text .mini-title {
+        font-size: 4vw;
+    }
+
+    .container .header .bottom {
+        padding: 2rem;
+    }
+
+    .container .header .left-side .title {
+        font-size: 14vw;
+        line-height: 14vw;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container .header .left-side .img {
+        width: 60vw;
+        order: -1;
+        margin-bottom: 1rem;
+    }
+
+    .container .header .right-side .title {
+        font-size: 7vw;
+    }
+
+    .container .header .right-side .text {
+        font-size: 4vw;
+    }
+
+    .categories {
+        padding: 0 1rem;
+    }
+
+    .categories .row .category-box {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .categories .row .category-box .icon {
+        font-size: 8vw;
+    }
+
+    .categories .row .category-box .title {
+        font-size: 3vw;
+
+    }
+
+    .Products .filter-and-sort {
+        padding: 2rem 0;
+    }
+
+    .Products .filter-and-sort .filter-btn {
+        padding: 1rem 2rem;
+        width: 100%;
+        flex: 1;
+        gap: 1rem;
+    }
+
+    .Products .filter-and-sort .filter-btn .title {
+        font-size: 5vw;
+    }
+
+    .Products .filter-and-sort .filter-btn .icon {
+        font-size: 7vw;
+    }
+
+    .Products .filter-and-sort .More-filters .title {
+        font-size: 6vw;
+    }
+
+    .Products .filter-and-sort .More-filters .cancel-icon {
+        font-size: 10vw;
+    }
+
+    .Products .filter-and-sort .More-filters .categories .category-box {}
+
+    .Products .filter-and-sort .More-filters {
+        padding: 2rem;
+    }
+
+    .Products .filter-and-sort .More-filters .categories .category-box {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .Products .filter-and-sort .More-filters .categories .category-box .icon {
+        font-size: 8vw;
+    }
+
+    .Products .filter-and-sort .More-filters .categories .category-box .title {
+        font-size: 3vw;
+
+    }
+
+    .Products .filter-and-sort .More-filters .notice {
+        display: none;
+    }
+
+    .Products {
+        padding: 1rem;
+    }
+
+    .product-box {
+        width: 100%;
+    }
+
+    .product-box .details .detail {
+        font-size: 5vw;
+    }
+
+    .product-box .img {
+        height: 50vh;
+    }
+
+    .product-box .title {
+        font-size: 8vw;
+    }
+
+
+    .product-box .ingredients .ingredient {
+        font-size: 1.2vw;
+        font-weight: 500;
+    }
+
+    .product-box .categories .category-box {
+        width: auto;
+        height: auto;
+    }
+
+    .product-box .categories .category-box .icon {
+        font-size: 10vw;
+    }
+
+    .product-box .categories .category-box .title {
+        font-size: 4vw;
+
+    }
+
+    .product-box .ingredients .ingredient {
+        font-size: 3vw;
+    }
+
+    .product-box .add-to-cart-btn-and-price .price,
+    .product-box .add-to-cart-btn-and-price .title {
+        font-size: 4vw;
+    }
+
+    .products {
+        gap: 3rem;
+    }
+}
+
+/*  big phone Style Finish */
+
+/*  phone style start */
+
+@media only screen and (max-width: 400px) {}
+
+/*  phone Style Finish */

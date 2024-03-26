@@ -57,7 +57,6 @@ export const Navbar = () => {
           <NavLink to="/" className="link origin">
             Our Menu
           </NavLink>
-          <div className="link">Meal Info</div>
           <NavLink to={"/contact"} className="link">
             Contact Us
           </NavLink>

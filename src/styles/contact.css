@@ -85,3 +85,48 @@
 }
 
 /* Form Style Finish */
+
+/* Small PC style start */
+
+@media only screen and (max-width: 1024px) {}
+
+/* Small PC Style Finish */
+
+/*  Tbalet style start */
+
+@media only screen and (max-width: 768px) {
+    .my-form {
+        padding: 0 10vw;
+    }
+
+    .contact-page .header {
+        flex-direction: column;
+    }
+}
+
+/*  Tbalet Style Finish */
+
+/*  big phone style start */
+
+@media only screen and (max-width: 500px) {
+    .contact-page .header .left-side .title {
+        font-size: 12vw;
+    }
+
+    .my-form .title {
+        font-size: 8vw;
+    }
+
+    .my-form .my-form-input {
+        font-size: 4vw;
+        width: 100%;
+    }
+}
+
+/*  big phone Style Finish */
+
+/*  phone style start */
+
+@media only screen and (max-width: 400px) {}
+
+/*  phone Style Finish */

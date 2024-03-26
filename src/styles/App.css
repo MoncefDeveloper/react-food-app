@@ -2,3 +2,27 @@
   width: 100%;
 
 }
+
+/* Small PC style start */
+
+@media only screen and (max-width: 1024px) {}
+
+/* Small PC Style Finish */
+
+/*  Tbalet style start */
+
+@media only screen and (max-width: 768px) {}
+
+/*  Tbalet Style Finish */
+
+/*  big phone style start */
+
+@media only screen and (max-width: 500px) {}
+
+/*  big phone Style Finish */
+
+/*  phone style start */
+
+@media only screen and (max-width: 400px) {}
+
+/*  phone Style Finish */
